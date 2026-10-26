@@ -1,4 +1,5 @@
 import random
+count = 1
 
 quotes_list = [
     "\"The secret of getting ahead is getting started.\" — Mark Twain",
@@ -12,4 +13,8 @@ quotes_list = [
     "\"Action is a great restorer and builder of confidence. Inaction is not only the result, but the cause, of fear.\" - Norman Vincent Peale",
 ]
 
-print(random.choice(quotes_list))
+def print_n_quotes(count):
+    for i in range(count):
+        print(random.choice(quotes_list))
+
+print_n_quotes(3)
