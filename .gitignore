@@ -1,0 +1,13 @@
+# ==========================================
+# Byte-compiled / Optimized / DLL files
+# ==========================================
+__pycache__/
+
+# ==========================================
+# Virtual Environments (venv)
+# ==========================================
+# Excludes the environment directory itself
+.venv/
+
+# IntelliJ / WebStorm / PyCharm
+.idea/
