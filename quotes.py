@@ -8,7 +8,8 @@ quotes_list = [
     "\"Eighty percent of success is showing up.\" - Woody Allen",
     "\"Courage doesn't always roar. Sometimes courage is the little voice at the end of the day that says I'll try again tomorrow.\" - Mary Anne Radmacher",
     "\"What lies behind you and what lies in front of you pales in comparison to what lies inside you.\" - Ralph Waldo Emerson",
-    "\"A river cuts through rock, not because of its power, but because of its persistence.\" - James N. Watkins"
+    "\"A river cuts through rock, not because of its power, but because of its persistence.\" - James N. Watkins",
+    "\"Action is a great restorer and builder of confidence. Inaction is not only the result, but the cause, of fear.\" - Norman Vincent Peale",
 ]
 
 print(random.choice(quotes_list))
