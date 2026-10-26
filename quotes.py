@@ -19,6 +19,11 @@ def print_n_quotes(count):
         print("» " + random.choice(quotes_list))
 
 def get_authors_list():
+    # Hotfix: Check if the source list is empty before processing
+    if not quotes_list:
+        print("No quotes available to process.")
+        return
+
     for quote in quotes_list:
         authors.append(quote.strip('"').split(' — ')[-1])
     authors_sorted = sorted(authors)
