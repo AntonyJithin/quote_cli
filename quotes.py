@@ -21,9 +21,7 @@ def print_n_quotes(count):
 def get_authors_list():
     for quote in quotes_list:
         authors.append(quote.strip('"').split(' — ')[-1])
-    # Print authors list
-    for author in authors:
-        print(" - " + author)
+    [print(" - " + author) for author in authors]
 
 print_n_quotes(3)
 get_authors_list()
