@@ -16,7 +16,7 @@ quotes_list = [
 
 def print_n_quotes(count):
     for i in range(count):
-        print(random.choice(quotes_list))
+        print("*** " + random.choice(quotes_list) + " ***")
 
 def get_authors_list():
     for quote in quotes_list:
