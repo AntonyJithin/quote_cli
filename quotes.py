@@ -57,3 +57,7 @@ print_n_quotes(3)
 get_authors_list()
 data = get_all_quotes_json()
 print(data)
+
+# wip
+# Fix1
+# Fix2
