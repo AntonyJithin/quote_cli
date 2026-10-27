@@ -1,5 +1,6 @@
 # Import Libraries
 import random
+import json
 
 # Variables
 count = 1
@@ -38,6 +39,21 @@ def get_authors_list():
     [print(" - " + author) for author in authors_sorted]
 
 
+def get_all_quotes_json():
+    data = {
+        "quotes": [
+            {
+                "quote": quote.split(" — ")[0].strip('"'),
+                "author": quote.split(" — ")[1]
+            }
+            for quote in quotes_list
+        ]
+    }
+    return json.dumps(data, indent=4)
+
+
 # Make function calls
 print_n_quotes(3)
 get_authors_list()
+data = get_all_quotes_json()
+print(data)
