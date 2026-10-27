@@ -1,7 +1,11 @@
+# Import Libraries
 import random
+
+# Variables
 count = 1
 authors =  []
 
+# quotes list
 quotes_list = [
     "\"The secret of getting ahead is getting started.\" — Mark Twain",
     "\"Do what you can, with what you have, where you are.\" — Theodore Roosevelt",
@@ -14,10 +18,14 @@ quotes_list = [
     "\"Action is a great restorer and builder of confidence. Inaction is not only the result, but the cause, of fear.\" — Norman Vincent Peale",
 ]
 
+
+# Function to print n number of quotes from the quotes list
 def print_n_quotes(count):
     for i in range(count):
         print("» " + random.choice(quotes_list))
 
+
+# Function to get the authors list
 def get_authors_list():
     # Hotfix: Check if the source list is empty before processing
     if not quotes_list:
@@ -29,5 +37,7 @@ def get_authors_list():
     authors_sorted = sorted(authors)
     [print(" - " + author) for author in authors_sorted]
 
+
+# Make function calls
 print_n_quotes(3)
 get_authors_list()
